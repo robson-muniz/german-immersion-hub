@@ -1,13 +1,14 @@
 import { Home, Tv, Library, User } from 'lucide-react';
 
 interface BottomNavProps {
-    activeTab: 'home' | 'shows' | 'phrases' | 'profile';
-    onTabChange: (tab: 'home' | 'shows' | 'phrases' | 'profile') => void;
+    activeTab: 'home' | 'learn' | 'shows' | 'phrases' | 'profile';
+    onTabChange: (tab: 'home' | 'learn' | 'shows' | 'phrases' | 'profile') => void;
 }
 
 export const BottomNav = ({ activeTab, onTabChange }: BottomNavProps) => {
     const tabs = [
         { id: 'home', icon: Home, label: 'Übersicht' },
+        { id: 'learn', icon: Tv, label: 'Lernen' },
         { id: 'shows', icon: Tv, label: 'Medien' },
         { id: 'phrases', icon: Library, label: 'Vokabeln' },
         { id: 'profile', icon: User, label: 'Profil' }
@@ -21,7 +22,7 @@ export const BottomNav = ({ activeTab, onTabChange }: BottomNavProps) => {
                     className="absolute top-0 h-0.5 bg-red-600 transition-all duration-300 ease-out"
                     style={{ 
                         width: '20%', 
-                        left: `${tabs.findIndex(t => t.id === activeTab) * 25 + 2.5}%` 
+                        left: `${tabs.findIndex(t => t.id === activeTab) * 20}%` 
                     }}
                 />
                 

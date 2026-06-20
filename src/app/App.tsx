@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { NavBar } from '../components/NavBar';
 import { BottomNav } from '../components/BottomNav';
 import { HeroStats } from '../components/HeroStats';
@@ -15,6 +16,7 @@ import { PhraseCard } from '../components/PhraseCard';
 import { ChallengeCard } from '../components/ChallengeCard';
 import { AchievementCard } from '../components/AchievementCard';
 import { Toast } from '../components/Toast';
+import { LearningFlow } from '../components/learning/LearningFlow';
 
 // Hooks
 import { useProgress } from '../hooks/useProgress';
@@ -141,6 +143,12 @@ export default function App() {
                                 <StatsGrid data={data} />
                             </div>
                         </div>
+                    </div>
+                )}
+
+                {activeTab === 'learn' && (
+                    <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
+                        <LearningFlow />
                     </div>
                 )}
 

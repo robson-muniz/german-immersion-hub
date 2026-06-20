@@ -1,13 +1,14 @@
-import { Compass, Sparkles, Home, Tv, Library, User } from 'lucide-react';
+import { Compass, Sparkles, Home, Tv, Library, User, PlayCircle } from 'lucide-react';
 
 interface NavBarProps {
-    activeTab: 'home' | 'shows' | 'phrases' | 'profile';
-    onTabChange: (tab: 'home' | 'shows' | 'phrases' | 'profile') => void;
+    activeTab: 'home' | 'learn' | 'shows' | 'phrases' | 'profile';
+    onTabChange: (tab: 'home' | 'learn' | 'shows' | 'phrases' | 'profile') => void;
 }
 
 export const NavBar = ({ activeTab, onTabChange }: NavBarProps) => {
     const tabs = [
         { id: 'home', icon: Home, label: 'Übersicht' },
+        { id: 'learn', icon: PlayCircle, label: 'Lernen' },
         { id: 'shows', icon: Tv, label: 'Medien' },
         { id: 'phrases', icon: Library, label: 'Vokabeln' },
         { id: 'profile', icon: User, label: 'Profil' }
