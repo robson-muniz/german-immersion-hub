@@ -12,11 +12,13 @@ const SCENE_DATA = {
     hotspots: [
         {
             id: 'h1', x: 20, y: 50, germanWord: 'der Vater', translation: 'the father', 
-            examples: ['Das ist mein Vater.', 'Wo ist dein Vater?'], pronunciation: 'FAH-ter'
+            examples: ['Das ist mein Vater.', 'Wo ist dein Vater?'], pronunciation: 'FAH-ter',
+            audioUrl: '/sounds/der_vater.mp3'
         },
         {
             id: 'h2', x: 80, y: 60, germanWord: 'das Auto', translation: 'the car', 
-            examples: ['Das Auto ist rot.', 'Wir fahren im Auto.'], pronunciation: 'OW-toh'
+            examples: ['Das Auto ist rot.', 'Wir fahren im Auto.'], pronunciation: 'OW-toh',
+            audioUrl: '/sounds/das_auto.mp3'
         }
     ]
 };
@@ -24,16 +26,18 @@ const SCENE_DATA = {
 const PHRASE_DATA = {
     phrase: "Das ist mein Vater",
     englishTranslation: "That is my father",
+    fullAudioUrl: '/sounds/das_ist_mein_vater.mp3',
     tokens: [
-        { id: 't1', german: 'Das', english: 'That', type: 'pronoun' as const },
-        { id: 't2', german: 'ist', english: 'is', type: 'verb' as const },
-        { id: 't3', german: 'mein', english: 'my', type: 'pronoun' as const },
-        { id: 't4', german: 'Vater', english: 'father', type: 'noun' as const }
+        { id: 't1', german: 'Das', english: 'That', type: 'pronoun' as const, audioUrl: '/sounds/das.mp3' },
+        { id: 't2', german: 'ist', english: 'is', type: 'verb' as const, audioUrl: '/sounds/ist.mp3' },
+        { id: 't3', german: 'mein', english: 'my', type: 'pronoun' as const, audioUrl: '/sounds/mein.mp3' },
+        { id: 't4', german: 'Vater', english: 'father', type: 'noun' as const, audioUrl: '/sounds/vater.mp3' }
     ]
 };
 
 const PIC_RECOGNITION_DATA = {
     germanWord: 'der Vater',
+    audioUrl: '/sounds/der_vater.mp3',
     options: [
         { id: 'o1', imageEmoji: '👨', isCorrect: true },
         { id: 'o2', imageEmoji: '👩', isCorrect: false },
