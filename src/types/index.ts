@@ -18,6 +18,7 @@ export interface Phrase {
     meaning: string;
     context: string;
     soundLike: string;
+    audioFile?: string;
 }
 
 export interface Challenge {

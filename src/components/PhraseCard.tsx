@@ -7,13 +7,14 @@ interface PhraseCardProps {
 
 export const PhraseCard = ({ phrase }: PhraseCardProps) => {
     const playAudio = () => {
-        if ('speechSynthesis' in window) {
-            // Cancel any ongoing speech
+        if (phrase.audioFile) {
+            const audio = new Audio(phrase.audioFile);
+            audio.play().catch(e => console.error("Error playing audio:", e));
+        } else if ('speechSynthesis' in window) {
+            // Fallback
             window.speechSynthesis.cancel();
-            
             const utterance = new SpeechSynthesisUtterance(phrase.phrase);
             utterance.lang = 'de-DE';
-            utterance.rate = 0.9; // Slightly slower for language learners
             window.speechSynthesis.speak(utterance);
         }
     };
