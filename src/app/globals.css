@@ -14,13 +14,24 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #020617; /* slate-950 */
+    --foreground: #f8fafc; /* slate-50 */
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  /* Make sure background forces dark mode looking color scheme */
+  background-color: #020617; /* Default to dark theme for this app */
+  color: #f8fafc;
+}
+
+@layer utilities {
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom, 20px);
+    /* For devices without safe area, add extra padding for bottom nav */
+    padding-bottom: max(env(safe-area-inset-bottom), 80px);
+  }
 }
