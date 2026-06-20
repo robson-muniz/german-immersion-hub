@@ -113,7 +113,7 @@ export default function App() {
 
     return (
         <div className="min-h-screen bg-slate-950 text-slate-50 font-sans selection:bg-emerald-500/30 pb-safe md:pb-0">
-            <NavBar />
+            <NavBar activeTab={activeTab} onTabChange={setActiveTab} />
 
             <main className="max-w-4xl mx-auto px-4 sm:px-6 py-8">
                 {activeTab === 'home' && (
