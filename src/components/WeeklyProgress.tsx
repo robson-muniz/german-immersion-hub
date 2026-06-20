@@ -16,13 +16,13 @@ export const WeeklyProgress = ({ weeklyMinutes, goalMinutes }: WeeklyProgressPro
                     </div>
                 </div>
                 <div className="text-right">
-                    <span className="text-emerald-400 font-bold">{progress}%</span>
+                    <span className="text-amber-400 font-bold">{progress}%</span>
                 </div>
             </div>
             
             <div className="h-3 bg-slate-950 rounded-full overflow-hidden border border-white/5">
                 <div 
-                    className="h-full bg-gradient-to-r from-emerald-500 to-teal-400 rounded-full transition-all duration-1000 ease-out relative"
+                    className="h-full bg-gradient-to-r from-red-600 to-amber-400 rounded-full transition-all duration-1000 ease-out relative"
                     style={{ width: `${progress}%` }}
                 >
                     <div className="absolute inset-0 bg-white/20 animate-pulse"></div>
@@ -30,7 +30,7 @@ export const WeeklyProgress = ({ weeklyMinutes, goalMinutes }: WeeklyProgressPro
             </div>
             
             {progress >= 100 && (
-                <p className="text-emerald-400 text-xs font-medium mt-3 text-center">
+                <p className="text-amber-400 text-xs font-medium mt-3 text-center">
                     🎉 Wochenziel erreicht! Weiter so!
                 </p>
             )}

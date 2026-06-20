@@ -24,7 +24,7 @@ export const LevelCard = ({ totalXp, currentLevel }: LevelCardProps) => {
         <div className="relative p-1 rounded-2xl bg-gradient-to-b from-white/10 to-white/5 shadow-2xl mb-8">
             <div className="bg-slate-950 rounded-xl p-6 relative overflow-hidden">
                 {/* Background ambient glow */}
-                <div className={`absolute top-0 right-0 w-64 h-64 bg-emerald-500/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 pointer-events-none`}></div>
+                <div className={`absolute top-0 right-0 w-64 h-64 bg-red-600/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 pointer-events-none`}></div>
                 
                 <div className="flex justify-between items-end mb-6 relative z-10">
                     <div>
@@ -54,7 +54,7 @@ export const LevelCard = ({ totalXp, currentLevel }: LevelCardProps) => {
                     </div>
                     <div className="h-4 bg-slate-900 rounded-full overflow-hidden border border-white/5 shadow-inner">
                         <div 
-                            className="h-full bg-gradient-to-r from-emerald-500 to-teal-400 rounded-full relative transition-all duration-1000 ease-out"
+                            className="h-full bg-gradient-to-r from-red-600 to-amber-400 rounded-full relative transition-all duration-1000 ease-out"
                             style={{ width: `${progressPercentage}%` }}
                         >
                             <div className="absolute top-0 left-0 right-0 bottom-0 bg-white/20 animate-pulse"></div>

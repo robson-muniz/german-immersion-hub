@@ -21,7 +21,7 @@ export const LogForm = ({ onLog }: LogFormProps) => {
 
     return (
         <div className="bg-slate-900 border border-white/10 rounded-2xl p-6 mb-8 relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-500/5 rounded-full blur-2xl"></div>
+            <div className="absolute top-0 right-0 w-32 h-32 bg-red-600/10 rounded-full blur-2xl"></div>
             
             <h3 className="text-lg font-bold text-white mb-4 relative z-10">Immersion Eintragen</h3>
             
@@ -32,7 +32,7 @@ export const LogForm = ({ onLog }: LogFormProps) => {
                         onClick={() => setMinutes(preset.toString())}
                         className={`px-4 py-2 rounded-xl text-sm font-bold transition-all ${
                             minutes === preset.toString()
-                                ? 'bg-emerald-500 text-white shadow-lg shadow-emerald-500/25'
+                                ? 'bg-amber-500 text-black shadow-lg shadow-amber-500/25'
                                 : 'bg-slate-800 text-slate-300 hover:bg-slate-700'
                         }`}
                     >
@@ -47,7 +47,7 @@ export const LogForm = ({ onLog }: LogFormProps) => {
                         type="number"
                         value={minutes}
                         onChange={(e) => setMinutes(e.target.value)}
-                        className="w-full bg-slate-950 border border-white/10 rounded-xl px-4 py-3 text-white font-medium focus:outline-none focus:border-emerald-500/50 focus:ring-1 focus:ring-emerald-500/50 transition-all appearance-none"
+                        className="w-full bg-slate-950 border border-white/10 rounded-xl px-4 py-3 text-white font-medium focus:outline-none focus:border-amber-500/50 focus:ring-1 focus:ring-amber-500/50 transition-all appearance-none"
                         placeholder="Minutes"
                         min="1"
                     />

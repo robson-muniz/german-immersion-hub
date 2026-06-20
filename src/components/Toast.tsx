@@ -28,13 +28,13 @@ export const Toast = ({ title, description, icon, type = 'success', onClose }: T
         if (icon === '⭐') return <span className="text-2xl mr-2">⭐</span>;
         if (icon === '🔥') return <span className="text-2xl mr-2">🔥</span>;
         if (icon === '🏆') return <span className="text-2xl mr-2">🏆</span>;
-        if (type === 'success') return <CheckCircle className="w-6 h-6 text-emerald-400 mr-3" />;
+        if (type === 'success') return <CheckCircle className="w-6 h-6 text-amber-400 mr-3" />;
         if (type === 'warning') return <AlertTriangle className="w-6 h-6 text-amber-400 mr-3" />;
         return <Info className="w-6 h-6 text-blue-400 mr-3" />;
     };
 
     const getBgColor = () => {
-        if (type === 'success') return 'bg-emerald-950/90 border-emerald-500/30';
+        if (type === 'success') return 'bg-slate-900/90 border-amber-500/30';
         if (type === 'warning') return 'bg-amber-950/90 border-amber-500/30';
         return 'bg-blue-950/90 border-blue-500/30';
     };

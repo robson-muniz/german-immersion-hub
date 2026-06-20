@@ -22,9 +22,9 @@ export const HeroStats = ({ streak, totalMinutes, totalXp, currentLevel }: HeroS
                 <span className="text-xs text-slate-400 font-medium mt-1">Tage Streak</span>
             </div>
             
-            <div className="bg-slate-900/50 backdrop-blur-sm border border-white/5 rounded-2xl p-4 flex flex-col items-center justify-center relative overflow-hidden group hover:border-emerald-500/30 transition-colors">
-                <div className="absolute -top-6 -right-6 w-24 h-24 bg-emerald-500/10 rounded-full blur-2xl group-hover:bg-emerald-500/20 transition-all"></div>
-                <Clock className="w-8 h-8 text-emerald-500 mb-2" />
+            <div className="bg-slate-900/50 backdrop-blur-sm border border-white/5 rounded-2xl p-4 flex flex-col items-center justify-center relative overflow-hidden group hover:border-red-600/30 transition-colors">
+                <div className="absolute -top-6 -right-6 w-24 h-24 bg-red-600/10 rounded-full blur-2xl group-hover:bg-red-600/20 transition-all"></div>
+                <Clock className="w-8 h-8 text-red-600 mb-2" />
                 <span className="text-3xl font-bold text-white tracking-tight">{animatedMinutes}</span>
                 <span className="text-xs text-slate-400 font-medium mt-1">Minuten</span>
             </div>

@@ -35,7 +35,7 @@ export const DailyMission = ({ mission, onComplete, isCompleted }: DailyMissionP
                 disabled={isCompleted}
                 className={`w-full py-3 rounded-xl font-bold transition-all flex items-center justify-center gap-2 relative z-10 ${
                     isCompleted 
-                        ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 cursor-not-allowed'
+                        ? 'bg-amber-500/20 text-amber-400 border border-amber-500/30 cursor-not-allowed'
                         : 'bg-indigo-500 hover:bg-indigo-400 text-white shadow-lg shadow-indigo-500/25 active:scale-[0.98]'
                 }`}
             >

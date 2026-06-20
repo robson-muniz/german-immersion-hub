@@ -45,13 +45,13 @@ export const ShowModal = ({ show, onClose }: ShowModalProps) => {
                     <div className="space-y-6">
                         <div>
                             <h4 className="flex items-center gap-2 text-sm font-bold text-white uppercase tracking-wider mb-2">
-                                <BookOpen className="w-4 h-4 text-emerald-400" /> 
+                                <BookOpen className="w-4 h-4 text-amber-400" /> 
                                 Warum es hilft
                             </h4>
                             <p className="text-slate-300 text-sm leading-relaxed bg-slate-800/50 p-4 rounded-xl border border-white/5">
                                 {show.description}
                                 <br/><br/>
-                                <strong className="text-emerald-400">Key Benefits:</strong> {show.keyBenefits}
+                                <strong className="text-amber-400">Key Benefits:</strong> {show.keyBenefits}
                             </p>
                         </div>
 

@@ -16,10 +16,10 @@ export const ChallengeCard = ({ challenge, onComplete }: ChallengeCardProps) => 
             className={`w-full text-left p-4 rounded-2xl border transition-all flex items-start gap-4 ${
                 isCompleted 
                     ? 'bg-slate-900/40 border-white/5 opacity-50' 
-                    : 'bg-slate-900 border-white/10 hover:border-emerald-500/30 hover:bg-slate-800/80 active:scale-[0.98]'
+                    : 'bg-slate-900 border-white/10 hover:border-amber-500/30 hover:bg-slate-800/80 active:scale-[0.98]'
             }`}
         >
-            <div className={`mt-0.5 transition-colors ${isCompleted ? 'text-emerald-500' : 'text-slate-500 group-hover:text-emerald-400'}`}>
+            <div className={`mt-0.5 transition-colors ${isCompleted ? 'text-amber-500' : 'text-slate-500 group-hover:text-amber-400'}`}>
                 {isCompleted ? <CheckCircle2 className="w-6 h-6" /> : <Circle className="w-6 h-6" />}
             </div>
             <div className="flex-1">
@@ -28,9 +28,9 @@ export const ChallengeCard = ({ challenge, onComplete }: ChallengeCardProps) => 
                 </p>
                 <div className="flex items-center gap-2">
                     <span className={`text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full ${
-                        challenge.difficulty === 'Leicht' ? 'bg-emerald-500/10 text-emerald-400' :
-                        challenge.difficulty === 'Mittel' ? 'bg-amber-500/10 text-amber-400' :
-                        'bg-rose-500/10 text-rose-400'
+                        challenge.difficulty === 'Leicht' ? 'bg-amber-500/10 text-amber-400' :
+                        challenge.difficulty === 'Mittel' ? 'bg-orange-500/10 text-orange-400' :
+                        'bg-red-500/10 text-red-400'
                     }`}>
                         {challenge.difficulty}
                     </span>

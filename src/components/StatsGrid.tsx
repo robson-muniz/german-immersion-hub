@@ -40,14 +40,14 @@ export const StatsGrid = ({ data }: StatsGridProps) => {
                                 <div 
                                     className={`w-full max-w-[32px] rounded-t-sm transition-all duration-500 ease-out ${
                                         day.minutes > 0 
-                                            ? isToday ? 'bg-emerald-400' : 'bg-emerald-500/50 group-hover:bg-emerald-400/80' 
+                                            ? isToday ? 'bg-amber-400' : 'bg-amber-500/50 group-hover:bg-amber-400/80' 
                                             : 'bg-slate-800'
                                     }`}
                                     style={{ height: `${height}%` }}
                                 ></div>
                             </div>
                             <span className={`text-[10px] font-medium uppercase tracking-wider ${
-                                isToday ? 'text-emerald-400' : 'text-slate-500'
+                                isToday ? 'text-amber-400' : 'text-slate-500'
                             }`}>
                                 {day.dayName}
                             </span>

@@ -105,14 +105,14 @@ export default function App() {
 
     if (!isLoaded) {
         return <div className="min-h-screen bg-slate-950 flex items-center justify-center">
-            <div className="w-8 h-8 border-4 border-emerald-500 border-t-transparent rounded-full animate-spin"></div>
+            <div className="w-8 h-8 border-4 border-amber-500 border-t-transparent rounded-full animate-spin"></div>
         </div>;
     }
 
     const isMissionCompleted = data.completedMissions.includes(dailyMission.id);
 
     return (
-        <div className="min-h-screen bg-slate-950 text-slate-50 font-sans selection:bg-emerald-500/30 pb-safe md:pb-0">
+        <div className="min-h-screen bg-slate-950 text-slate-50 font-sans selection:bg-amber-500/30 pb-safe md:pb-0">
             <NavBar activeTab={activeTab} onTabChange={setActiveTab} />
 
             <main className="max-w-4xl mx-auto px-4 sm:px-6 py-8">
@@ -182,7 +182,7 @@ export default function App() {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                             <div>
                                 <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
-                                    <span className="text-emerald-500">🎯</span> Herausforderungen
+                                    <span className="text-amber-500">🎯</span> Herausforderungen
                                 </h3>
                                 <div className="space-y-3">
                                     {challenges.map(challenge => (
