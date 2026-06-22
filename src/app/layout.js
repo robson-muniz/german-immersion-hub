@@ -1,8 +1,8 @@
 import './globals.css';
 
 export const metadata = {
-  title: 'LumaLingua German | Visual language learning worlds',
-  description: 'Explore German through interactive illustrated scenes, contextual audio, and premium immersion-based practice.',
+  title: 'LumaLingua German | AI-powered fluency platform',
+  description: 'Build German fluency with AI tutoring, immersive content, smart roadmaps, analytics, vocabulary review, and premium practice.',
 };
 
 export default function RootLayout({ children }) {
